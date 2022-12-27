@@ -1,0 +1,52 @@
+.skeleton-container {
+  width: 500px;
+  height: 200px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.skeleton-container .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.skeleton-container .title {
+  width: 400px;
+  height: 10px;
+  margin-bottom: 10px;
+}
+
+.skeleton-container .description {
+  width: 300px;
+  height: 10px;
+}
+
+.skeleton-container .content {
+  width: 400px;
+  height: 100px;
+  margin-left: 90px;
+}
+
+.skeleton {
+  background: #656871;
+  background-image: linear-gradient(
+    to right,
+    #656871 0%,
+    #888b94 20%,
+    #656871 40%,
+    #656871 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  animation: skeleton-loading 1s linear infinite forwards;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}

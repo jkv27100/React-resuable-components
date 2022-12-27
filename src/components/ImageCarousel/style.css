@@ -1,0 +1,43 @@
+.carousel {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  display: flex;
+}
+
+.image {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 20px;
+  -webkit-user-drag: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.active {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: scale(1.08);
+}
